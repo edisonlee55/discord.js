@@ -1,7 +1,7 @@
 <div align="center">
   <br />
   <p>
-    <a href="https://discord.js.org"><img src="https://discord.js.org/static/logo.svg" width="546" alt="discord.js" id="djs-logo" /></a>
+    <a href="https://discord.js.org"><img src="https://discord.js.org/static/logo.svg" width="546" alt="discord.js" /></a>
   </p>
   <br />
   <p>
@@ -10,7 +10,6 @@
     <a href="https://www.npmjs.com/package/discord.js"><img src="https://img.shields.io/npm/dt/discord.js.svg?maxAge=3600" alt="NPM downloads" /></a>
     <a href="https://travis-ci.org/discordjs/discord.js"><img src="https://travis-ci.org/discordjs/discord.js.svg" alt="Build status" /></a>
     <a href="https://david-dm.org/discordjs/discord.js"><img src="https://img.shields.io/david/discordjs/discord.js.svg?maxAge=3600" alt="Dependencies" /></a>
-    <a href="https://www.patreon.com/discordjs"><img src="https://img.shields.io/badge/donate-patreon-F96854.svg" alt="Patreon" /></a>
   </p>
   <p>
     <a href="https://nodei.co/npm/discord.js/"><img src="https://nodei.co/npm/discord.js.png?downloads=true&stars=true" alt="NPM info" /></a>
@@ -18,10 +17,11 @@
 </div>
 
 # Welcome!
-Welcome to the discord.js v12 documentation.
+Welcome to the discord.js v11.3 documentation.
+The v11.3 release contains backports of many features and bug fixes from the in-development v12, such as categories and animated emoji support.
 
 v12 is still very much a work-in-progress, as we're aiming to make it the best it can possibly be before releasing.
-Only use it if you are fond of living life on the bleeding edge.
+If you are fond of living life on the bleeding-edge, check out the master branch.
 
 ## About
 discord.js is a powerful [node.js](https://nodejs.org) module that allows you to interact with the
@@ -33,7 +33,7 @@ discord.js is a powerful [node.js](https://nodejs.org) module that allows you to
 - 100% coverage of the Discord API
 
 ## Installation
-**Node.js 8.0.0 or newer is required.**  
+**Node.js 6.0.0 or newer is required.**  
 Ignore any warnings about unmet peer dependencies, as they're all optional.
 
 Without voice support: `npm install discord.js`  
@@ -46,13 +46,12 @@ Using opusscript is only recommended for development environments where node-opu
 For production bots, using node-opus should be considered a necessity, especially if they're going to be running on multiple servers.
 
 ### Optional packages
-- [zlib-sync](https://www.npmjs.com/package/zlib-sync) for significantly faster WebSocket data inflation (`npm install zlib-sync`)
-- [erlpack](https://github.com/discordapp/erlpack) for significantly faster WebSocket data (de)serialisation (`npm install discordapp/erlpack`)
+- [bufferutil](https://www.npmjs.com/package/bufferutil) to greatly speed up the WebSocket when *not* using uws (`npm install bufferutil`)
+- [erlpack](https://github.com/hammerandchisel/erlpack) for significantly faster WebSocket data (de)serialisation (`npm install hammerandchisel/erlpack`)
 - One of the following packages can be installed for faster voice packet encryption and decryption:
     - [sodium](https://www.npmjs.com/package/sodium) (`npm install sodium`)
     - [libsodium.js](https://www.npmjs.com/package/libsodium-wrappers) (`npm install libsodium-wrappers`)
 - [uws](https://www.npmjs.com/package/uws) for a much faster WebSocket connection (`npm install uws`)
-- [bufferutil](https://www.npmjs.com/package/bufferutil) for a much faster WebSocket connection when *not* using uws (`npm install bufferutil`)
 
 ## Example usage
 ```js

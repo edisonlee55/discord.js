@@ -1,15 +1,12 @@
 {
   "extends": "eslint:recommended",
   "parserOptions": {
-    "ecmaVersion": 2017
+    "ecmaVersion": 6
   },
   "env": {
     "es6": true,
     "node": true
   },
-  "overrides": [
-    { "files": ["*.browser.js"], "env": { "browser": true } }
-  ],
   "rules": {
     "no-await-in-loop": "warn",
     "no-compare-neg-zero": "error",
@@ -127,11 +124,7 @@
     "semi-spacing": "error",
     "semi": "error",
     "space-before-blocks": "error",
-    "space-before-function-paren": ["error", {
-      "anonymous": "never",
-      "named": "never",
-      "asyncArrow": "always"
-    }],
+    "space-before-function-paren": ["error", "never"],
     "space-in-parens": "error",
     "space-infix-ops": "error",
     "space-unary-ops": "error",
