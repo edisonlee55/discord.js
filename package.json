@@ -1,6 +1,6 @@
 {
   "name": "discord.js-fork",
-  "version": "11.4.0",
+  "version": "11.4.1",
   "description": "A powerful library for interacting with the Discord API (Fork from discord.js)",
   "main": "./src/index",
   "types": "./typings/index.d.ts",
@@ -40,7 +40,7 @@
   "runkitExampleFilename": "./docs/examples/ping.js",
   "dependencies": {
     "long": "^4.0.0",
-    "prism-media-fork": "^0.3.1",
+    "prism-media-fork": "^0.1.0",
     "snekfetch": "^3.6.4",
     "tweetnacl": "^1.0.0",
     "ws": "^4.0.0"
