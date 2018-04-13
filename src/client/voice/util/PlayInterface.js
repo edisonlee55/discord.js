@@ -1,5 +1,5 @@
 const { Readable } = require('stream');
-const prism = require('prism-media');
+const prism = require('prism-media-fork');
 const { Error } = require('../../../errors');
 
 /**

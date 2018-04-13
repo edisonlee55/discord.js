@@ -1,5 +1,5 @@
 const EventEmitter = require('events');
-const prism = require('prism-media');
+const prism = require('prism-media-fork');
 const PacketHandler = require('./PacketHandler');
 const { Error } = require('../../../errors');
 

@@ -1,6 +1,6 @@
 const EventEmitter = require('events').EventEmitter;
 const { Readable: ReadableStream } = require('stream');
-const prism = require('prism-media');
+const prism = require('prism-media-fork');
 const StreamDispatcher = require('../dispatcher/StreamDispatcher');
 
 const FFMPEG_ARGUMENTS = [
